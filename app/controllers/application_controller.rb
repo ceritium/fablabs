@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  before_action :set_locale
+  # before_action :set_locale
 
   around_filter :user_time_zone, if: :current_user
 
